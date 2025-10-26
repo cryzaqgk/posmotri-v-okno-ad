@@ -156,7 +156,7 @@ ol {
 
 .content__video-card-title {
   color: #fff;
-  font-family: "Oswald";
+  font-family: Oswald;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
@@ -249,6 +249,10 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   margin: 2px;
 }
 
+.search-form__label:hover:has(input[type="text"]) {
+  text-decoration: none;
+}
+
 .search-form__label:hover {
   text-decoration: underline;
 }
@@ -332,11 +336,4 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .result__video-container,
 .content__list-container {
   position: relative;
-}
-
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
